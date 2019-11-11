@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- <form action="action.php"> -->
+    <h1>Form 01</h1>
+    <form method="POST">
+
+        <input type="text" name="username" />
+        <input type="submit" value="Send" />
+    </form>
+
+    <!-- <!-con questo metodo la password sarebbe visibile nell´url-->
+    <h1>Form 02</h1>
+    <form method="GET">
+        <label for="username">Username</label>
+        <input type="text" name="username" placeholder="Your Username" /> <br>
+        <label for="password">Password</label>
+        <input type="password" name="pw" placeholder="Password please">
+
+        <input type="submit" value="Send" />
+    </form>
+    <h1>Form 03</h1>
+    <form>
+        <fieldset>
+            <legend>LogIn Form</legend>
+            <label for="username">Username</label>
+            <input type="text" name="username" placeholder="Your Username" /> <br>
+            <label for="password">Password</label>
+            <input type="password" name="pw" placeholder="Password please">
+            <input type="submit" value="Send" />
+        </fieldset>
+    </form>
+
+    <h1>Register form</h1>
+    <form>
+        <label for="name">Name</label>
+        <input type="text" name="name"><br>
+        <label for="username">Username</label>
+        <input type="text" name="username"><br>
+        <input type="reset" value="cancel"><br><label for="email">Email</label>
+        <input type="email" name="email"><br>
+        <input type="submit" value="Register">
+        <br>
+        <!--to erase the values-->
+        <br>
+        <fieldset>
+            <select name="tech" multiple size="2">
+                <option value="">Please choose..</option>
+                <option value="html">HTML</option>
+                <option value="css">CSS</option>
+                <option value="java">JAVA</option>
+            </select>
+            <input type="submit" value="Register">
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Fav. Lenguages</legend>
+            <input type="checkbox" value="german" name="lang"> German
+            <input type="checkbox" value="spanish" name="lang"> Spanish
+            <input type="checkbox" value="arabic" name="lang">Arabic
+            <input type="checkbox" value="french" name="lang">French
+            <input type="checkbox" value="italien" name="lang">Italien
+            <input type="checkbox" value="hindi" name="lang">Hindi
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Gender</legend>
+            <input type="radio" name="gender" value="male" checked> Male <br>
+            <input type="radio" name="gender" value="female"> Female <br>
+            <input type="radio" name="gender" value="other"> Other <br>
+        </fieldset>
+        <input type="reset" value="cancel">
+        <input type="button" value="click">
+        <input type="submit" value="register">
+        <br> <br>
+        <textarea name="message" cols="30" rows="10">Hi this is a default message</textarea>
+        <br><br>
+        <fieldset>
+            <label for="color">Color:</label>
+            <input type="color" name="color"><br>
+            <input type="submit" value="send">
+        </fieldset>
+    </form>
+    <form>
+
+        <h1> Quantity - Raiting type - Searching - Phone</h1>
+        <fieldset>
+            <label for="quantity">How many items:</label>
+            <input type="number" name="quantity" min="9" max="20">
+            <br>
+            <input type="reset" value="cancel">
+            <input type="button" value="click">
+            <input type="submit" value="register">
+        </fieldset>
+        <fieldset>
+            <label for="range">Rating:</label>
+            <input type="range" name="quanlity" min="1" max="10" value="1">
+            <br>
+            <input type="reset" value="cancel">
+            <input type="button" value="click">
+            <input type="submit" value="register">
+        </fieldset>
+        <fieldset>
+            <label for="search">Looking for something:</label>
+            <input type="search" name="search">
+            <br>
+            <input type="reset" value="cancel">
+            <input type="button" value="click">
+            <input type="submit" value="register">
+        </fieldset>
+        <fieldset>
+            <label for="phone">Phone number</label>
+            <input type="tel" name="phone">
+            <br>
+            <input type="reset" value="cancel">
+            <input type="button" value="click">
+            <input type="submit" value="register">
+        </fieldset>
+        <fieldset>
+            <label for="date">Select a date</label>
+            <input type="date" name="date" min="1998-01-21">
+            <br>
+            <input type="reset" value="cancel">
+            <input type="button" value="click">
+            <input type="submit" value="register">
+        </fieldset>
+
+    </form>
+    <br><br>
+    <form>
+        <fieldset>
+            <label for="name">Name: </label>
+            <input type="text" name="name" placeholder="Your Name" />
+            <br>
+            <label for="email">Email: </label>
+            <input type="email" name="email" placeholder="type your email">
+            <br>
+            <label for="cloths">Select a cloth:</label>
+            <select name="item">
+                <option value="">...</option>
+                <option value="rock">Skirt</option>
+                <option value="jeans">Jeans</option>
+                <option value="t-shirt">T-Shirt</option>
+            </select>
+            <br>
+            <label for="quantity">How many items:</label>
+            <input type="number" name="quantity" min="1" max="20">
+            <br>
+            <label for="number">Select a day</label>
+            <select name="day" />
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+            <option>6</option>
+            <option>7</option>
+            <option>8</option>
+            <option>9</option>
+            <option>10</option>
+            <option>11</option>
+            <option>12</option>
+            <option>13</option>
+            <option>14</option>
+            <option>15</option>
+            <option>16</option>
+            <option>17</option>
+            <option>18</option>
+            <option>19</option>
+            <option>20</option>
+            <option>21</option>
+            <option>22</option>
+            <option>23</option>
+            <option>24</option>
+            <option>25</option>
+            <option>26</option>
+            <option>27</option>
+            <option>28</option>
+            <option>29</option>
+            <option>30</option>
+            <option>31</option>
+            </select>
+            <br>
+            <label for="month">Month</label>
+            <input type="month" name="month">
+            </select>
+            <br>
+            <label for="time">Select the time</label>
+            <input type="time" value="time" name="time">
+            <br><br>
+            <input type="submit" value="send">
+            <input type="reset" value="cancel">
+            <br>
+        </fieldset>
+        <br><br><br>
+        <fieldset>
+            <label for="ice-cream-choice">Choose a flavor:</label>
+            <input list="ice-cream-flavors" id="ice-cream-choice" name="ice-cream-choice" />
+            <datalist id="ice-cream-flavors">
+                <option value="Chocolate">
+                <option value="Coconut">
+                <option value="Mint">
+                <option value="Strawberry">
+                <option value="Vanilla">
+            </datalist>
+        </fieldset>
+        <br><br><br>
+    </form>
+</body>
+
+</html>
